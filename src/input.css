@@ -13,11 +13,17 @@
     .no-print {
         display: none !important;
     }
-    .stHeading h1:first-of-type, .stHeading h2:first-of-type, .stFileUploader {
+    .stHeading h1:first-of-type, .stHeading h2:first-of-type, .stFileUploader, hr {
         @apply !hidden;
     }
 }
 
+.stAppHeader {
+    @apply !hidden;
+}
+.stMainBlockContainer {
+    @apply !my-0 !py-0;
+}
 html, body {
     @apply !text-[12pt] !text-neutral-800;
 }
