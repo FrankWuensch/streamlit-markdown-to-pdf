@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@media print{
+    html, body {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+        background: #fff !important;
+        font-size: 12pt !important;
+        print-color-adjust: exact !important;
+    }
+    .no-print {
+        display: none !important;
+    }
+    .stHeading h1:first-of-type, .stHeading h2:first-of-type, .stFileUploader {
+        @apply !hidden;
+    }
+}
+
+html, body {
+    @apply !text-[12pt] !text-neutral-800;
+}
+h1 {
+    @apply !text-[22pt] !text-black;
+}
+h2 {
+    @apply !text-[18pt] !text-black;
+}
+h3 {
+    @apply !font-bold !text-[14pt] !text-neutral-800;
+}
